@@ -1,0 +1,22 @@
+*,
+* ::after,
+* ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-primary: #34c94b;
+  --color-black: #121212;
+  --color-white: #ffffff;
+}
