@@ -8,11 +8,11 @@ function Navbar() {
   return (
     <>
       <nav className={styles.navbar}>
-        <a href="/">
+        <a href="">
           <Logo />
         </a>
-        <Search />
-        <Button />
+        <Search placeholder="Search a song of your choice" />
+        <Button children="Give Feedback" />
       </nav>
     </>
   );

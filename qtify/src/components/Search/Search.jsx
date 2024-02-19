@@ -1,9 +1,9 @@
 import { useState } from "react";
 import React from "react";
 import styles from "./Search.module.css";
-// import { ReactComponent as SearchIcon } from "../../assets/search.jpg";
+import SearchIcon from "../../assets/search.jpg";
 
-function Search() {
+function Search({ placeholder }) {
   const [search, setSearch] = useState("");
 
   const handleChange = (e) => {
@@ -22,7 +22,7 @@ function Search() {
         <form className={styles.wrapper} onSubmit={onSubmit}>
           <input
             type="text"
-            placeholder="Search a song of your choice"
+            placeholder={placeholder}
             name={search}
             value={search}
             onChange={handleChange}
@@ -30,7 +30,7 @@ function Search() {
           />
           <button className={styles.searchButton} type="submit">
             {/* <SearchIcon /> */}
-            Search
+            <img src={SearchIcon} alt="search-icon" />
           </button>
         </form>
       </div>
