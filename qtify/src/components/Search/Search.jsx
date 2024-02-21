@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./Search.module.css";
 import SearchIcon from "../../assets/search.jpg";
 
-function SearchBar({ placeholder }) {
+function Search({ placeholder }) {
   const [search, setSearch] = useState("");
 
   const handleChange = (e) => {
@@ -38,4 +38,4 @@ function SearchBar({ placeholder }) {
   );
 }
 
-export default SearchBar;
+export default Search;

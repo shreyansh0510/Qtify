@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Navbar.module.css";
 
 import Logo from "../Logo/Logo";
-import SearchBar from "../Search/Search";
+import Search from "../Search/Search";
 import Button from "../Button/Button";
 
 function Navbar() {
@@ -12,7 +12,7 @@ function Navbar() {
         <a href="">
           <Logo />
         </a>
-        <SearchBar placeholder="Search a song of your choice" />
+        <Search placeholder="Search a song of your choice" />
         <Button children="Give Feedback" />
       </nav>
     </>
