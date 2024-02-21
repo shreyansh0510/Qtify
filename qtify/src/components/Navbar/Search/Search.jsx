@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import styles from "./Search.module.css";
-import SearchIcon from "../../assets/search.jpg";
+import SearchIcon from "../../../assets/search.jpg";
 
 function Search({ placeholder }) {
   const [search, setSearch] = useState("");

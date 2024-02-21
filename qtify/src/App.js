@@ -1,4 +1,6 @@
+import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Faq from "./components/FAQ/Faq";
@@ -34,6 +36,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Hero />
       {/* sending "topAlbums" "newAlbums" data to "<Homepage />" component by using useContext() hook  */}
       {/* <Outlet context={{ data: { topAlbums, newAlbums } }} /> */}
       {/* <Faq /> */}
