@@ -69,7 +69,7 @@ function Section({ title = "", data = [] }) {
     return data?.map((item, key) => {
       return (
         <>
-          <Container key={item.id} id={item.id} image={item.image} follows={item.follows} />
+          <Container key={item.id} id={item.id} image={item.image} follows={item.follows} title={item.title} />
         </>
       )
     })

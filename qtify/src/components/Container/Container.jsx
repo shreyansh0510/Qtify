@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./Container.module.css"
 import { Card, CardMedia, Chip } from '@mui/material'
 
-function Container({ id, image, follows }) {
+function Container({ id, image, follows, title }) {
     return (
         <>
             <div className={styles.container} >
@@ -19,7 +19,7 @@ function Container({ id, image, follows }) {
                     </div>
                 </Card>
                 <div className={styles.containerText} >
-                    New Bollywood
+                    {title}
                 </div>
             </div>
         </>
