@@ -19,18 +19,19 @@ function Search({ placeholder }) {
   return (
     <>
       <div className="wrapper">
-        <input
-          type="text"
-          placeholder={placeholder}
-          name={search}
-          value={search}
-          onChange={handleChange}
-          className={styles.search}
-        />
-        <button className={styles.searchButton} type="submit">
-          {/* <SearchIcon /> */}
-          <img src={SearchIcon} alt="search-icon" />
-        </button>
+        <form className={styles.wrapper} onSubmit={onSubmit}>
+          <input
+            type="text"
+            placeholder={placeholder}
+            name={search}
+            value={search}
+            onChange={handleChange}
+            className={styles.search}
+          />
+          <button className={styles.searchButton} type="submit">
+            <img src={SearchIcon} alt="search-icon" />
+          </button>
+        </form>
       </div>
     </>
   );

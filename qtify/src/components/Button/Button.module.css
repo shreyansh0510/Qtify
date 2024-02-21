@@ -9,3 +9,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.buttonText {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.25px;
+  text-align: center;
+}
