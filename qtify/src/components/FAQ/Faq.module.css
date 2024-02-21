@@ -1,0 +1,12 @@
+.faqContainer {
+  background-color: var(--color-black);
+  padding: 20px 40px;
+}
+
+.faqHeader {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 75px;
+  text-align: center;
+  color: var(--color-white);
+}

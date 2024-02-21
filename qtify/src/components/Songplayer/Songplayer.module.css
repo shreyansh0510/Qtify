@@ -1,0 +1,31 @@
+.playerContainer {
+  background-color: var(--color-black);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.playerCover {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.playerCoverDetails {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.playerMusic {
+  width: 35%;
+  text-align: center;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: var(--color-white);
+  font-size: small;
+}

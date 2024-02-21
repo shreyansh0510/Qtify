@@ -1,0 +1,35 @@
+.wrapper {
+  width: 160px;
+  height: 190px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+}
+
+.coverImage {
+  height: 50%;
+  object-fit: contain;
+}
+
+.banner {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.chip {
+  padding: 4px 8px;
+  border-radius: 10px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  margin-left: 10px;
+}
+
+.wrapperTitle {
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--color-black);
+  margin-top: 5px;
+  text-overflow: ellipsis;
+  outline: none;
+}

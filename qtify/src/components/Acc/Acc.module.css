@@ -1,0 +1,14 @@
+.accordionHeader {
+}
+
+.accordionSummary {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.accordionDetails {
+  color: var(--color-black);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+}

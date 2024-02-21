@@ -1,0 +1,33 @@
+.songs {
+  background-color: var(--color-black);
+  padding: 20px;
+}
+
+.songsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.songsTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.songsShowAll {
+  color: var(--color-primary);
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+.songsCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
