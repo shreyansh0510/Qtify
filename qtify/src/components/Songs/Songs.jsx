@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Songs.module.css";
-import Card from "../Card/Card";
+import Card from "../Cards/Cards";
 
 function Songs() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./Faq.module.css";
-import Acc from '../Acc/Acc';
+import Acc from './Acc/Acc';
 
 
 const faqsData = [

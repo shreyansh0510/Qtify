@@ -3,7 +3,7 @@ import styles from "./Section.module.css"
 
 import { CircularProgress } from "@mui/material";
 import Carousel from "../Carousel/Carousel";
-import Card from "../Card/Card";
+// import Card from "../Card/Card";
 
 function Section({ title, data, type }) {
   // state ("carouselToggle") to display either "show all" or "collapse" text
@@ -37,12 +37,12 @@ function Section({ title, data, type }) {
             Show All => <Carousel /> */}
             {!carouselToggle ? (
               <div className={styles.wrapper}>
-                {data.map((items) => {
+                {/* {data.map((items) => {
                   return <Card data={items} type={type} />;
-                })}
+                })} */}
               </div>
             ) : (
-              <Carousel data={data} renderComponent={(data) => <Card data={data} type={type} />} />
+              {/* <Carousel data={data} renderComponent={(data) => <Card data={data} type={type} />} /> */ }
             )}
           </div>
         </>
