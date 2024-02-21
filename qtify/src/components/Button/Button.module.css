@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   outline: none;
+  font-family: Poppins;
 }
 
 .buttonText {
@@ -17,5 +18,5 @@
   line-height: 27px;
   letter-spacing: 0.25px;
   text-align: center;
-  font-family: Poppins;
+  /* font-family: Poppins; */
 }
