@@ -57,7 +57,7 @@ import styles from "./Section.module.css";
 import Caraosel from "../Caraosel/Caraosel";
 
 function Section({ title = "", data = [] }) {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   const handleToggle = () => {
     setToggle((prevState) => !prevState);
