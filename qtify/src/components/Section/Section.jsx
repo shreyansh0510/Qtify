@@ -14,7 +14,6 @@
 //     setCarouselToggle((prevState) => !prevState);
 //   };
 
-
 //   console.log("section-data", data)
 
 //   return (
@@ -26,7 +25,6 @@
 //           {!carouselToggle ? "Collapse" : "Show All"}
 //         </h4>
 //       </div>
-
 
 //       {data.length === 0 ? (
 //         <CircularProgress />
@@ -53,48 +51,49 @@
 
 // export default Section;
 
-
-import React, { useState } from 'react'
-import Container from '../Container/Container'
-import styles from "./Section.module.css"
+import React, { useState } from "react";
+import Container from "../Container/Container";
+import styles from "./Section.module.css";
+import Caraosel from "../Caraosel/Caraosel";
 
 function Section({ title = "", data = [] }) {
-  const [toggle, setToggle] = useState(true)
+  const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
-    setToggle(prevState => !prevState)
-  }
+    setToggle((prevState) => !prevState);
+  };
 
-  const showContainer = () => {
-    return data?.map((item, key) => {
-      return (
-        <>
-          <Container key={item.id} id={item.id} image={item.image} follows={item.follows} title={item.title} />
-        </>
-      )
-    })
-
-  }
-
-  console.log("Section title", title)
-  console.log("Section data", data)
-
+  console.log("Section", data);
 
   return (
     <>
-      <div className={styles.section} >
+      <div className={styles.section}>
         <div className={styles.sectionHeader}>
           <div className={styles.sectionTitle}> {title} </div>
-          <button onClick={handleToggle} className={styles.toggle}> {toggle ? "Show all" : "Collapse"} </button>
+          <button onClick={handleToggle} className={styles.toggle}>
+            {toggle ? "Show all" : "Collapse"}
+          </button>
         </div>
-        <div className={styles.sectionGrid}>
-          {showContainer()}
+        <div>
+          {toggle ? (
+            <>
+              <Caraosel caraouselData={data} />
+            </>
+          ) : (
+            <div className={styles.sectionContainer}>
+              {data.map((card) => (
+                <Container
+                  image={card.image}
+                  follows={card.follows}
+                  title={card.title}
+                />
+              ))}
+            </div>
+          )}
         </div>
       </div>
-
     </>
-
-  )
+  );
 }
 
-export default Section
+export default Section;

@@ -28,6 +28,7 @@
 .sectionHeader {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .sectionTitle {
@@ -51,9 +52,15 @@
   cursor: pointer;
 }
 
-.sectionGrid {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  color: var(--color-white);
+.sectionContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  justify-content: space-around;
 }
+
+/* margin-top: 20px;
+  color: var(--color-white);
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  justify-content: space-evenly;
+  border: 1px solid green; */

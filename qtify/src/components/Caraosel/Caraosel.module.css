@@ -1,0 +1,31 @@
+.mySwiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.leftarrow {
+  top: 30%;
+  left: 0;
+  cursor: pointer;
+  /* border: 1px solid yellow; */
+}
+
+.rightarrow {
+  top: 30%;
+  right: 0;
+  cursor: pointer;
+  /* border: 1px solid yellow; */
+}
+
+.arrows {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 30%;
+  /* border: 1px solid red; */
+}
