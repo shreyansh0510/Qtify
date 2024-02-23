@@ -5,14 +5,8 @@ import { fetchTopAlbums, fetchNewAlbums, fetchSongs } from "../src/api/api";
 import { useEffect, useState } from "react";
 import Songs from "./components/Songs/Songs";
 
-// import { useEffect, useState } from "react";
-// import { Outlet } from "react-router-dom";
-// import Faq from "./components/FAQ/Faq";
-
-// calling fetchNewAlbums  & fetchTopAlbums API to fetch data
-// import { fetchNewAlbums, fetchTopAlbums } from "./api/api";
-// import Songplayer from "./components/Songplayer/Songplayer";
-// import { Card } from "@mui/material";
+import Faq from "./components/FAQ/Faq";
+import Songplayer from "./components/Songplayer/Songplayer";
 
 function App() {
   // local state("data")
@@ -43,14 +37,16 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+
       <Hero />
+
       <Section title="Top Albums" data={musicData.topAlbums} />
       <Section title="New Albums" data={musicData.newAlbums} />
 
       <Songs songsData={musicData.songs} />
 
-      {/* <Faq /> */}
-      {/* <Songplayer /> */}
+      <Faq />
+      <Songplayer />
     </div>
   );
 }
