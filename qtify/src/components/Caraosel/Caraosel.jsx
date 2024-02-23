@@ -29,21 +29,7 @@ const Controls = ({ data }) => {
   return <></>;
 };
 
-export default function Caraosel({ caraouselData }) {
-  //   const swiperRef = useRef(null);
-
-  //   const navigateToPrev = () => {
-  //     if (swiperRef.current) {
-  //       swiperRef.current.swiper.slideNext();
-  //     }
-  //   };
-
-  //   const navigateToNext = () => {
-  //     if (swiperRef.current) {
-  //       swiperRef.current.swiper.slidePrev();
-  //     }
-  //   };
-
+export default function Caraosel({ caraouselData, songs }) {
   return (
     <>
       <div style={{ color: "white" }}>
@@ -62,8 +48,9 @@ export default function Caraosel({ caraouselData }) {
             <SwiperSlide>
               <Container
                 image={item.image}
-                follows={item.follows}
+                count={songs ? item.likes : item.follows}
                 title={item.title}
+                clipText={songs ? "Likes" : "Follows"}
               />
             </SwiperSlide>
           ))}

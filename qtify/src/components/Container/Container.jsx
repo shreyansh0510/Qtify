@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Container.module.css";
 import { Card, CardMedia, Chip } from "@mui/material";
 
-function Container({ image, follows, title }) {
+function Container({ image, count, title, clipText }) {
   return (
     <>
       <div className={styles.container}>
@@ -14,7 +14,7 @@ function Container({ image, follows, title }) {
           <CardMedia className={styles.containerCardMedia} image={image} />
           <div className={styles.cardChip}>
             <Chip
-              label={`${follows} Follows`}
+              label={`${count} ${clipText}`}
               sx={{
                 borderRadius: "15px",
                 color: "var(--color-white)",

@@ -1,15 +1,12 @@
 import React from "react";
 import styles from "./Songs.module.css";
-import Card from "../Cards/Cards";
+import Section from "../Section/Section";
 
-function Songs() {
+function Songs({ songsData }) {
   return (
     <div className={styles.songs}>
-      <div className={styles.songsHeader}>
-        <div className={styles.songsTitle}>Songs</div>
-      </div>
-      <div className={styles.songsCards}>
-        <Card data={null} type="songs" />
+      <div>
+        <Section title="Songs" data={songsData} tab />
       </div>
     </div>
   );
